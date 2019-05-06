@@ -1,0 +1,33 @@
+
+
+.image-list {
+
+	display: grid;
+	/* 
+	auto-fill: css decides how many cols to insert
+	minmax: each col min 250px wide, 1fr = equally sized
+	*/
+	grid-template-columns: repeat( auto-fill, minmax( 250px, 1fr ) );
+	grid-gap: 0;
+	grid-auto-rows: 1px;
+
+}
+
+
+
+.image-list img {
+
+	width: 250px;
+	box-shadow: 0px 2px 8px rgba(0,0,0, .1);
+	border-radius: 3px;
+	
+}
+
+
+/* SPECIAL QUERY for this component. */
+@media only screen and (max-width: 800px) {
+
+	.image-list { display: block; }
+	.image-list img { width: 100%; margin-bottom: 15px; }
+
+}

@@ -1,0 +1,18 @@
+
+
+.container { 
+	padding: 150px; 
+	/* height of footer */
+	min-height: calc(100vh - 80px);
+}
+
+.flex { display: flex; }
+
+
+@media only screen and (max-width: 1150px) {
+
+	.container { padding: 10px; padding-top: 150px; }
+
+	.flex { display: inherit; }
+
+}
